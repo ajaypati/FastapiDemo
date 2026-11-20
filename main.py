@@ -49,7 +49,7 @@ def post_data(data: dict):
 @app.get("/users")
 def get_users():
     return {
-        "message": "Users fetched successfully",
+        "message": "Users fetched successfully!",
         "data": users
     }
 
