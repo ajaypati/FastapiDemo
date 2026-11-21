@@ -49,7 +49,7 @@ def post_data(data: dict):
 @app.get("/users")
 def get_users():
     return {
-        "message": "Users fetched successfully and data is provided",
+        "message": "Users fetched successfully and data is provided!",
         "data": users
     }
 
@@ -58,7 +58,7 @@ def get_user(user_id: int):
     for user in users:
         if user["id"] == user_id:
             return {
-                "message": "User fetched successfully",
+                "message": "User fetched successfully and data is provided!",
                 "data": user
             }
     return {
